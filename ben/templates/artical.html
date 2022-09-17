@@ -1,0 +1,396 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>artical</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+{% for det in dot %}
+  <!-- Favicons -->
+  <link href="{% static 'top-n-town.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="{% static 'https://fonts.googleapis.com'%}">
+  <link rel="preconnect" href="{% static 'https://fonts.gstatic.com'%}" crossorigin>
+  <link href="{% static 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'%}" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction - v1.1.0
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{% static 'index.html'%}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1><img src="{% static 'top-n-town.png'%}" alt=""><span> </span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/artical" class="active">artical</a></li>
+          
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url({{det.image1.url}});">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 posts-list">
+
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="{% static 'scaled.jpg'%}" class="img-fluid" alt="">
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">                    choclate Flavour- ice-cream .
+                </h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                  </div>
+                  <div class="d-flex align-items-center">
+                  </div>
+                </div>
+
+                <p>
+                  
+                  price-₹620 FLAVOURS :chocolate ice-cream, brand:top n town, packaging size:100ml,country of origin:made in india.
+                </p>
+
+                
+
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="{{det.image2.url}}" class="img-fluid" alt=""  >
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="   post-title ">choclate coffe ice-cream.</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                  
+                  </div>
+                  <span class="px-3 text-black-50"></span>
+                  <div class="d-flex align-items-center">
+                    
+                  </div>
+                </div>
+
+                <p>
+                  price-₹620 FLAVOURS :chocolate ice-cream coffe, brand:top n town, packaging size:glass,country of origin:made in india.
+
+                </p>
+
+                <hr>
+
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="{{det.image3.url}}" class="img-fluid" alt="">
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Two cones of nut-flavored ice cream.</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                  </div>
+                  <span class="px-3 text-black-50"></span>
+                  <div class="d-flex align-items-center">
+                  </div>
+                </div>
+
+                <p>
+                  price-₹120 FLAVOURS :Two cones of nut-flavored ice cream, brand:top n town, packaging size:cone,country of origin:made in india.
+
+                </p>
+
+                <hr>
+
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="{{det.image4.url}}" class="img-fluid" alt="">
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Waffle with ice cream.</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                  </div>
+                  <span class="px-3 text-black-50"></span>
+                  <div class="d-flex align-items-center">
+                  </div>
+                </div>
+
+                <p>
+                  price-₹120 FLAVOURS :baffle with ice cream, brand:top n town, packaging size:box,country of origin:made in india.
+
+                </p>
+
+                <hr>
+
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="{{det.image5.url}}" class="img-fluid" alt="">
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Chocolate with ice-cream </h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                  </div>
+                  <span class="px-3 text-black-50"></span>
+                  <div class="d-flex align-items-center">
+                  </div>
+                </div>
+
+                <p>
+                  price-₹320 FLAVOURS :choclate with ice cream, brand:top n town, packaging size:packet,country of origin:made in india.
+
+                </p>
+
+                <hr>
+
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="{{det.image6.url}}" class="img-fluid" alt="">
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title">Chocolate lava cake with vanilla ice cream</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                  </div>
+                  <span class="px-3 text-black-50"></span>
+                  <div class="d-flex align-items-center">
+                  </div>
+                </div>
+
+                <p>
+                  price-₹220 FLAVOURS :choclate lava cake ice cream, brand:top n town, packaging size:box,country of origin:made in india.
+
+                </p>
+
+                <hr>
+
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+
+        </div><!-- End blog posts list -->
+
+        <div class="blog-pagination">
+          <ul class="justify-content-center">
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </div><!-- End blog pagination -->
+
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>top-n-town</h3>
+              <p>
+                <br>mp nagar zone-2 bhopal, India<br>
+                <strong>Phone:</strong> +91 7389805241<br>
+                <strong>Email:</strong> ntaroliya@gmail.com<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our brands</h4>
+            <ul>
+              <li><a href="#">top n town </a></li>
+              <li><a href="#">amul</a></li>
+              <li><a href="#">kwality wall's</a></li>
+              <li><a href="#">vadilal</a></li>
+              <li><a href="#">havmor</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          
+
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>location</h4>
+            <ul>
+              <li><a href="#">bhopal</a></li>
+              <li><a href="#">indore</a></li>
+              <li><a href="#">sagar</a></li>
+              <li><a href="#">jabalpur</a></li>
+              <li><a href="#">reeva</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+         
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>top-n-town</span></strong>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+          Designed by <a >nikita taroliya </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
+{% endfor %}

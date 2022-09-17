@@ -1,0 +1,584 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>top-n-town</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'top-n-town.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="{% static 'https://fonts.googleapis.com'%}">
+  <link rel="preconnect" href={% static '"https://fonts.gstatic.com'%}" crossorigin>
+  <link href="{% static 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap'%}" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: UpConstruction - v1.1.0
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="{% static 'assets/img/logo.png'%}" alt=""> -->
+        <h1><img src="{% static 'top-n-town.png'%}" alt="" width="100px" height="50px"><span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+         
+          <li><a href="/services">Services</a></li>
+          <li><a href="/artical">article </a></li>
+         
+
+
+                 
+          
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+</section><section id="hero" class="hero">  
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Welcome to <span>top n town</span></h2>
+           
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+{% for post in allpost %}
+      <div class="carousel-item active" style="background-image: url({{post.image1.url}})"></div>
+      <div class="carousel-item" style="background-image: url({{post.image2.url}})"></div>
+      <div class="carousel-item" style="background-image: url({{post.image3.url}})"></div>
+      <div class="carousel-item" style="background-image: url({{post.image4.url}})"></div>
+      <div class="carousel-item" style="background-image: url({{post.image5.url}})"></div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+
+
+
+ <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+    </section>
+  </body>
+  </html>
+  </div>
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+   
+
+    <!-- ======= Constructions Section ======= -->
+    <section id="constructions" class="constructions">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>ice-cream</h2>
+          
+        </div>
+
+      
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({{post.image6.url}});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">price ₹120 .</h4>
+                    <p>Magic Cone
+                      Costs: 120 rupees, Description: Choco chips ice cream, topped with chocolate chips, in a vanilla waffle cone.
+                      .</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({{post.image7.url}});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">price ₹420 . </h4>
+                    <p>Ketofy - Hazelnut Keto Chocolate (2x50g) | Hazelnut Rich Unsweetened Dark Chocolate | No Maltitol | Gluten Free.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({{post.image8.url}});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title"> price ₹699</h4>
+                    <p>Product Details:
+
+                      Cake Flavour- Truffle
+                      Type of Cake- Cream Cake
+                      Weight- Half Kg
+                      Shape- Round
+                      Serves- 4-6 People
+                      Size- 6 Inches in Diameter.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({{post.image9.url}});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">₹ 25/ Piece  </h4>
+                    <p>Flavours	
+                      Vanilla
+                      Brand	
+                      Ice Cream Land
+                      Veg preference	
+                      Veg
+                      Total Fat	
+                      7.6 g
+                      Country of Origin	
+                      Made in India
+                      Weight	
+                      73 g.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Constructions Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        
+      
+       
+
+
+
+     
+   
+    <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row  g-2 d-flex">
+
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>chocolate</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>vanilla</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>butter pecan</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>chocolate chips</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <h3>choclate Flavour- ice-cream</h3>
+                <p class="fst-italic">
+                  If you think that the vanilla ice cream started it all, think again. Chocolate ice cream, while only second to vanilla in popularity, actually came first.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i>It’s the first ice cream flavor ever invented. .</li>
+                  <li><i class="bi bi-check2-all"></i>Chocolate ice cream is already decadent on its own. But it has a myriad of sinful varieties, which are featured on this list as well.</li>
+                  <li><i class="bi bi-check2-all"></i> If you’re a chocoholic, you’d better stick around! .</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="{{post.image10.url}}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Vanilla</h3>
+                <p class="fst-italic">
+                   The most iconic ice cream flavor known to man. Did you know that vanilla is actually the most popular flavor out there? 
+
+                  Yup, the well-loved chocolate ice cream does not even come close! Over 90% of Americans prefer vanilla over chocolate or any other flavor.     .
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> It’s not surprising, considering how versatile it is! Whether you eat it on its own or enjoy it on top of a pie, good old-fashioned vanilla ice cream will not disappoint.</li>
+                  <li><i class="bi bi-check2-all"></i>Here’s another fun fact. In Hawaii, there is a fruit that tastes just like vanilla ice cream .</li>
+                  <li><i class="bi bi-check2-all"></i> They call it the inga feuillei or ice cream bean, and it thrives only in tropical climates.</li>
+                 
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{{post.image11.url}}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3> Butter Pecan  </h3>
+                <ul>
+                  <li><i class="{% static 'bi bi-check2-all'%}"></i>It’s the perfect combination of sweet, salty, buttery, and crunchy .</li>
+                  <li><i class="{% static 'bi bi-check2-all'%}"></i>Did you know that the pecan is Alabama’s state nut? As such, butter pecan is very popular there.</li>
+                  <li><i class="{% static 'bi bi-check2-all'%}"></i>Fellow butter pecan lovers, time to pack your bags, we’re off to Alabama .</li>
+                </ul>
+                <p class="fst-italic">
+                  Another classic and a personal favorite of mine is butter pecan. Who can say no to vanilla ice cream mixed with crisp pecans roasted in butter .
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{{post.image12.url}}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Chocolate Chip.</h3>
+                <p class="fst-italic">
+                  Chocolate chip ice cream is another fan favorite, which is not surprising. 
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> It’s a combination of two well-loved classics.</li>
+                  <li><i class="bi bi-check2-all"></i>Just imagining sweet and crunchy chocolate chips in every bite of vanilla ice cream makes my taste buds tingle .</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{{post.image13.url}}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Products</h2>
+          
+        </div>
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+
+          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-remodeling">flavor</li>
+            
+          </ul><!-- End Projects Filters -->
+
+          
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image14.url}}" class="img-fluid" alt="" height="500px" width="500px">
+                <div class="portfolio-info">
+                  <a href=" assets/img/projects/remodeling-1.jpg " title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>  
+                  
+                 
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image15.url}}" class="img-fluid" alt=""height="500px" width="500px" >
+                <div class="portfolio-info">
+                  <a href="assets/img/projects/construction-1.jpg" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image16.url}}" class="img-fluid" alt=""height="500px" width="500px" >
+                <div class="portfolio-info">
+                 
+                  <a href="assets/img/projects/repairs-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image17.url}}" class="img-fluid" alt=""height="500px" width="500px" >
+                <div class="portfolio-info">
+                 
+                  <a href="assets/img/projects/design-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image18.url}}" class="img-fluid" alt=""height="500px" width="500px" >
+                <div class="portfolio-info">
+                 
+                  <a href="assets/img/projects/remodeling-2.jpg" title="Remodeling 2" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image19.url}}" class="img-fluid" alt=""height="500px" width="500px" >
+                <div class="portfolio-info">
+                  
+                  <a href="assets/img/projects/construction-2.jpg" title="Construction 2" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image20.url}}" class="img-fluid" alt="" height="500px" width="500px"  >
+                <div class="portfolio-info">
+               
+                  <a href="assets/img/projects/repairs-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image21.url}}" class="img-fluid" alt=""height="500px" width="500px"  >
+                <div class="portfolio-info">
+                  
+                  <a href="assets/img/projects/design-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{{post.image22.url}}" class="img-fluid" alt=""height="500px" width="500px" >
+                <div class="portfolio-info">
+                 
+                  <a href="assets/img/projects/remodeling-3.jpg" title="Remodeling 3" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+           
+
+            {% endfor %}    
+           
+            
+
+          </div>
+
+        </div>
+
+ 
+      </div>
+      
+      <footer id="footer" class="footer">
+
+        <div class="footer-content position-relative">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-info">
+                  <h3> top-n-town </h3>
+                  <p>
+                    mp nagar zone-2 bhopal, India<br><br>
+                    <strong>Phone:</strong> +91 7389805241<br>
+                    <strong>Email:</strong> ntaroliya@gmail.com<br>
+                  </p>
+                  <div class="social-links d-flex mt-3">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div><!-- End footer info column-->
+    
+              <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Terms of service</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                </ul>
+              </div><!-- End footer links column-->
+    
+              
+              <div class="col-lg-2 col-md-3 footer-links">
+                <h4>Our brands</h4>
+                <ul>
+                  <li><a href="#">top n town </a></li>
+                  <li><a href="#">amul</a></li>
+                  <li><a href="#">kwality wall's</a></li>
+                  <li><a href="#">vadilal</a></li>
+                  <li><a href="#">havmor</a></li>
+                </ul>
+              </div><!-- End footer links column-->
+    
+              
+    
+    
+              <div class="col-lg-2 col-md-3 footer-links">
+                <h4>location</h4>
+                <ul>
+                  <li><a href="#">bhopal</a></li>
+                  <li><a href="#">indore</a></li>
+                  <li><a href="#">sagar</a></li>
+                  <li><a href="#">jabalpur</a></li>
+                  <li><a href="#">reeva</a></li>
+                </ul>
+              </div><!-- End footer links column-->
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-legal text-center position-relative">
+          <div class="container">
+            <div class="copyright">
+             
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+              Designed by<a> nikita taroliya</a>
+            </div>
+          </div>
+        </div>
+    
+      </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
